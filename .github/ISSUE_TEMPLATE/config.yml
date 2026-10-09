@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/digitalheads/marginalia-community/discussions/categories/q-a
+    about: How something works, or whether a book will open. Questions go to Discussions.
+  - name: Share a bigger idea
+    url: https://github.com/digitalheads/marginalia-community/discussions/categories/ideas
+    about: Open-ended ideas and wishes, to talk through with other readers first.
+  - name: Account, privacy or a copy of your data
+    url: https://getmarginalia.app/support
+    about: Email us instead of posting here. This repo is public.
+  - name: Report a highlight or a reader
+    url: https://getmarginalia.app/support#report
+    about: Use the Report link in the app or email us. Never report people in public issues.
+  - name: Report a security problem
+    url: https://getmarginalia.app/support#contact
+    about: Email hello@digitalheads.pl privately. Please don't post security problems here.

@@ -1,0 +1,35 @@
+name: Feature idea
+description: A specific change or new feature you'd like. For open-ended ideas, start in Discussions instead.
+labels: ["idea"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The reading moment or task where Marginalia gets in your way or falls short.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: How you imagine it working.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you manage today?
+      description: Any workaround or other tool you use for this now.
+    validations:
+      required: false
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where would you use it?
+      multiple: true
+      options:
+        - Web app
+        - iPhone app
+    validations:
+      required: false

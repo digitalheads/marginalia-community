@@ -1,0 +1,66 @@
+name: Book won't open or looks wrong
+description: An EPUB fails to upload or open, or its text, images or layout look wrong in the reader.
+labels: ["bug", "book-file"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        EPUB files vary a lot, and each report helps us make the reader better.
+        **Please don't attach the book file.** This repo is public, and most books may not be shared. Tell us where the book comes from instead: if it's free, a link is perfect.
+  - type: input
+    id: book
+    attributes:
+      label: Book title and author
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where is the book from?
+      description: A shop, a publisher or a free site such as Standard Ebooks or Project Gutenberg. Add a link if it's free.
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What goes wrong?
+      options:
+        - The upload is refused (for example "not a valid EPUB", "DRM" or "too large")
+        - The upload never finishes
+        - The book won't open in the reader
+        - The book opens, but text, images or layout look wrong
+        - Highlights are in the wrong place or missing
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: The exact error message, and for layout problems the chapter or section where it happens.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where were you reading?
+      options:
+        - Web app in a desktop browser
+        - Web app in a phone or tablet browser
+        - iPhone app
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Browser or device, and version
+      description: For example "Chrome 130 on macOS", "Safari on iOS 26.2", or the iPhone app version shown at the bottom of Settings.
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: A screenshot of the page that looks wrong helps most.
+    validations:
+      required: false

@@ -1,0 +1,56 @@
+name: Bug report
+description: Something in Marginalia is broken or doesn't work as you expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. This repo is public: please don't include your email address, your password or a book file.
+        If a specific book won't open or looks wrong, use the "Book won't open or looks wrong" form instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you saw, including any error message, word for word if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: false
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where were you reading?
+      options:
+        - Web app in a desktop browser
+        - Web app in a phone or tablet browser
+        - iPhone app
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Browser or device, and version
+      description: For example "Firefox 131 on Windows 11", "Safari on iOS 26.2", or for the iPhone app the version shown at the bottom of Settings.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag images here. Please crop out anything private.
+    validations:
+      required: false
